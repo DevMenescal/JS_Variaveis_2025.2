@@ -145,8 +145,71 @@ console.log("Você comprou: " + quantidade + " " + produto + " por " + total + "
 console.log(`Você comprou: ${quantidade} ${produto} por ${total} reais.`);
 
 
+// EXEMPLO 02
 
+const animal1 = "gatos"
 
+const animal2 = "cachorros"
 
+let qtdGatos = 4
 
+let qtdCachorros = 5
 
+let totalAnimais = qtdGatos + qtdCachorros
+
+let frase = `Minha vozinha caquética prefere ${animal1}, do que ${animal2}, porém ela é uma acumuladoras. Possuí ${qtdGatos} gatos e ${qtdCachorros} cachorros. No total, são: ${totalAnimais} bichos.`
+
+console.log(frase);
+
+// EXEMPLO 3
+
+// let estudarJS = window.prompt("E aí feio, como é estudar JS?")
+
+// window.alert(`O resultado da sua resposta é: ${estudarJS}`)
+
+// CONVERTENDO VALORES DE UMA VARIÁVEL
+
+// DE STRING PARA NÚMEROS
+
+// Para número inteiros utilizamos o ParseInt()
+// (*Dica) Quando aparece na cor azul, é numero. Já a coir branca é string. (NO CONSOLE)
+
+let stringNumero = "42"
+let numero  = parseInt(stringNumero)
+
+console.log(stringNumero);
+console.log(numero);
+
+// Usando o parseFloat(), para números flutuantes (números quebrados)
+
+let stringNumeroQuebrado = "3.14"
+let numeroQuebrado = parseFloat(stringNumeroQuebrado)
+
+console.log(numeroQuebrado);
+
+// Utilizando o number() * Mais indicado para o uso no dia a dia.
+
+let stringNumero22 = "22"
+let numero22 = Number(stringNumero22)
+console.log(numero22);
+
+// Utilizar o operador "+" antes do nome da variável que vai ser transformada.
+
+let stringNumero1 = "1991"
+let numeroConvertido1 = +stringNumero1
+
+console.log(numeroConvertido1);
+
+// CONVERTENDO NÚMEROS PARA STRINGS
+
+// USANDO toString()
+
+let numero666 = 666
+let stringNumero666 = numero666.toString()
+console.log(stringNumero666);
+
+// USANDO o String()
+
+let numero33 = 33
+let stringNumero33 = String(numero33)
+console.log(stringNumero33);
