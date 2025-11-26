@@ -213,3 +213,293 @@ console.log(stringNumero666);
 let numero33 = 33
 let stringNumero33 = String(numero33)
 console.log(stringNumero33);
+
+/* CONHECENDO ESTRUTURAS CONDICIONAIS
+
+- Programas que são executados de cima para baixo;
+- Com estas estruturas podemos alterar o fluxo de execução;
+- O caminho dependerá das condições e comparações.*/
+
+// USANDO IF
+
+// if: Executar um bloco de código, se uma condição for verdadeira.
+
+// SINTAXE: if (condição) {}
+
+// EXEMPLO 01
+
+let idadeMaria = 71
+
+let idadeJoao = 63
+
+if(idadeMaria>idadeJoao){
+    console.log("Exemplo de if: Ih rapaz, a Maria é mais velha que o João.");
+}
+
+// EXEMPLO 02
+
+let usuario = "Gustavo"
+
+if(usuario == "Gustavo"){
+    console.log(`Fala meu camarada ${usuario}, seu casca de bala.`);
+}
+
+// USANDO O ELSE IF
+
+// else if: Adiciona uma nova condição, se a condição anterior for falsa.
+
+/* SINTAXE
+
+if (condicao){
+}
+else if (condicao){
+}
+
+*/
+
+// EXEMPLO 01
+
+let logadoTiktok = true
+
+if(logadoTiktok == true){
+    console.log("Bem-vindo meu caro desocupado!");
+}
+else if(logadoTiktok == false){
+    console.log("Até que enfim, foi lavar a louça.");
+}
+
+// EXEMPLO 02
+
+let nomeUsuaria = "Alice"
+
+if (nomeUsuaria == "Claudia"){
+    console.log("Seja bem-vinda, Claudia. Vamos estudar?");
+}
+else if (nomeUsuaria == "Helena"){
+    console.log("Seja bem-vinda, Helena. Vamos estudar?");
+}
+else if (nomeUsuaria == "Alice"){
+    console.log("Seja bem-vinda, Alice. Vamos estudar? ");
+    
+}
+
+// USANDO O ELSE
+
+/*
+else: Executa um bloco de código, se todas as condições anteriores forem falsas.
+
+SINTAXE:
+
+if (condicao){
+}
+else if (condicao){
+}
+else {
+}
+
+*/
+
+// if e else, só temos 1, no início e outro no final.
+// else if, eu posso ter vários ao longo da comparação.
+
+// EXEMPLO 01
+
+let corEscolhida = "Preta"
+
+if (corEscolhida == "Branca"){
+    console.log("Ótima escolha! Seu possante será branco.");
+}
+else if (corEscolhida == "Vermelha"){
+    console.log("Caraca feio, teu carro vai ser vermelho!");
+}
+else{
+    console.log("Poxa, só temos duas cores disponíveis no momento. Escolha Branca ou Vermelha.");
+}
+
+// EXEMPLO 02
+
+const nota = 69;
+
+if (nota >= 90) {
+  console.log("A");
+} else if (nota >= 80) {
+  console.log("B");
+} else if (nota >= 70) {
+  console.log("C");
+} else {
+  console.log("Reprovado");
+}
+
+// OPERADORES LÓGICOS
+
+/*
+Os operadores lógicos servem para unir duas ou mais comparações.
+O resultado final é booleano.
+Os operadores são:
+&& - AND - E - true se ambos os dois lados forem verdadeiros.
+|| - OR - OU - true se pelo menos um dos lados for verdadeiro.
+! - NOT - NÃO - este operador inverte a comparação.
+*/
+
+// EXEMPLO 01 - && - AND - E
+
+let nomeUsuario1 = "Paulo"
+let senhaUsuario1 = 1234
+
+if (nomeUsuario1 == "Paulo" && senhaUsuario1 == 1234){
+    console.log("Login efetuado com sucesso!!!");
+}
+else{
+    console.log("Usuário ou senha inválidos.");
+}
+
+// EXEMPLO 02 - || - OR - OU
+
+let temDinheiro = false
+let temCartao = false
+
+if(temDinheiro == true || temCartao == true){
+    console.log("Pode efetuar a compra.");
+}
+else{
+    console.log("Tá liso feio?!?");
+}
+
+// EXEMPLO 3 - ! - NOT - NÃO
+
+let estaChovendo = true
+
+if(!estaChovendo){
+    console.log("Parece que não está chovendo, que tal uma voltinha de bike?");
+}
+else {
+    console.log("Ih, tá chovendo agora. Melhor deixar isso para depois.");
+}
+
+// EXEMPLO 04 - COM && E ||
+
+let idadeParticipante = 20
+let temDocumento = true
+
+if (idadeParticipante <= 17 && temDocumento){
+    console.log("Menor de idade, mas pode participar do evento.");
+}
+else if (idadeParticipante <= 17 || !temDocumento){
+    console.log("Não pode participar.");
+}
+else {
+    console.log("Pode participar.");  
+}
+
+// ESTUTURA CONDICIONAL: SWITCH
+/*
+- O switch pode ser utilizado para organização de um excesso de else if.
+- Cada if seria um case;
+- Para cada case, temos de adicionar um break;
+- E temos o default, que funciona como um else.
+
+SINTAXE
+
+switch (expressao){
+case valor 1:
+break
+
+case valor 2:
+break
+
+default(Código a ser executado se nenhum dos casos anteriores for correspondido) 
+}
+*/
+
+// EXEMPLO 01 - Verificar o valor da variável job.
+
+const job = "Engenheiro"
+
+switch (job) {
+    case "Programador":
+        console.log("Você é programador.");
+        break;
+    case "Advogado":
+        console.log("Você é um advogado.");
+        break;
+    case "Engenheiro":
+        console.log("Você é engenheiro.");
+        break;
+    default:
+        console.log("Profissão não encontrada.");
+        break;
+}
+
+// EXEMPLO 02 - DIAS DA SEMANA
+
+let dia = 4
+
+switch (dia){
+    case 1:
+        console.log("Domingo");
+        break;
+    case 2:
+        console.log("Segunda");
+        break;
+    case 3:
+        console.log("Terça");
+        break;
+    case 4:
+        console.log("Quarta");
+        break;
+    case 5:
+        console.log("Quinta");
+        break;
+    case 6:
+        console.log("Sexta");
+        break
+    case 7:
+        console.log("Sábado");
+        break;
+    default:
+        console.log("Dia inválido!");
+}
+
+
+// INCREMENTO E DECREMENTO: São usados para aumentar ou diminuir o valor de uma variável numérica em +1 ou -1.
+
+// Antes da variável: Quando você usa o operador de incremento ou decremento antes da variável (++variavel ou --variavel), a mudança é feita de forma imediata.
+
+// INCREMENTO
+
+let contagemMais = 5
+
+let resultadoMais = ++contagemMais * 2
+
+console.log(`O resultadoMais ficou: ${resultadoMais}`);
+console.log(`O contagemMais ficou: ${contagemMais}`);
+
+// DECREMENTO
+
+let contagemMenos = 5
+
+let resultadoMenos = --contagemMenos * 2
+
+console.log(`O resultadoMenos ficou: ${resultadoMenos}`);
+console.log(`O contagemMenos ficou: ${contagemMenos}`);
+
+// Depois da variável: Quando você usa o operador de incremente e decremento depois da variável (variavel++ ou variavel--), o valor incial da variável é usado em qualquer expressão, aí somente depois que é efetuado a mudança.
+
+// INCREMENTO
+
+let contagemMais2 = 6
+
+let resultadoMais2 = contagemMais2++ * 2
+
+console.log(`O resultadoMais2 ficou: ${resultadoMais2}`);
+console.log(`O contagemMais2 ficou: ${contagemMais2}`);
+
+// DECREMENTO
+
+let contagemMenos2 = 5
+
+let resultadoMenos2 = contagemMenos2-- * 2
+
+console.log(`O resultadoMenos2 ficou: ${resultadoMenos2}`);
+console.log(`O contagemMenos2 ficou: ${contagemMenos2}`);
+
