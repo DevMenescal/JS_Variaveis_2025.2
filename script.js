@@ -503,3 +503,105 @@ let resultadoMenos2 = contagemMenos2-- * 2
 console.log(`O resultadoMenos2 ficou: ${resultadoMenos2}`);
 console.log(`O contagemMenos2 ficou: ${contagemMenos2}`);
 
+// ESTRUTURAS DE REPETIÇÃO
+
+/* O que são estruturas de repetição?
+● Um bloco de código que se repete até uma 
+condição ser satisfeita;
+● Isso evita a repetição desnecessária do nosso 
+código;
+● A suas sintaxes são diferentes, mas as duas chegam 
+no mesmo resultado;
+● Temos que nos atentar ao loop infinito */
+
+// WHILE: é usada para repetir um bloco de código enquanto uma condição for verdadeira.
+
+// SINTAXE: while (condição) {}
+
+// EXEMPLO 01 
+
+let contagemRegressiva = 10
+
+while (contagemRegressiva > 0) {
+    console.log(contagemRegressiva)
+    contagemRegressiva--
+}
+console.log("Feliz ano novo!");
+
+// EXEMPLO 02
+
+let estoque = 5
+
+while (estoque > 0){
+    console.log("Produto em estoque. Quantidade restante: " + estoque);
+    estoque--
+}
+console.log("Produto Esgotado!");
+
+// FOR: é usada quando você sabe extamente quantas vezes, deseja repetir uma ação. Ele consiste em 3 partes: inicialização, condição e expressão final.
+
+// SINTAXE: for (inicialização; condição; expressão final)
+
+// EXEMPLO 01
+
+for (let i = 1; i < 10; i++){
+    console.log("Repetindo algo...");
+}
+
+// EXEMPLO 02
+
+let estoque1 = 10
+
+for (estoque1; estoque1 > 0; estoque1 = estoque1 - 1){
+    console.log(`O estoque está diminuindo: ${estoque1}`);
+}
+console.log(`O estoque é igual a: ${estoque1}`);
+
+
+// FUNÇÕES
+
+/* O que são funções?
+ ● Estruturas de código menores, podemos dividir 
+nosso código em várias funções;
+ ● O ideal é que cada uma tenha apenas um único 
+objetivo;
+ ● Isso nos faz poupar código, pois podemos 
+reaproveitá-las;
+ ● A linguagem tem várias funções já criadas, e nós 
+podemos criar as nossas;
+
+    Definindo uma função
+  ● A estrutura da função é um pouco mais complexa;
+  ● Primeiramente utilizamos a palavra function, isso 
+  inicia uma função;
+  ● Precisamos depois nomeá-la;
+  ● Os parâmetros, que são uma espécie de 
+  configuração, ficam entre ( ) depois do nome;
+  ● O corpo da função fica entre  { };
+  ● Geralmente uma função retorna um valor; */
+
+// SINTAXE: function nomeDaFuncao (){}
+
+// EXEMPLO 01 - USO BÁSICO DE UMA FUNÇÃO
+
+function minhaFuncao (){
+    console.log("Testando, 1, 2, 3...");
+}
+
+minhaFuncao()
+
+// EXEMPLO 02 - USANDO UMA FUNÇÃO EM UMA VARIÁVEL
+
+const minhaFuncaoEmVariavel = function(){
+    console.log("Usando uma função em variável.");
+}
+
+minhaFuncaoEmVariavel()
+
+// EXEMPLO 3 - USANDO UMA FUNÇÃO COM PARÂMETRO
+
+function funcaoComParametro(txt) {
+    console.log(`${txt}`);   
+}
+
+funcaoComParametro("Hoje é quinta-feira meu povo!!!")
